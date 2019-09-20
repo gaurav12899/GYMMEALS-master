@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "563193929751",
+    "firebase_url": "https://gymmeals-master.firebaseio.com",
+    "project_id": "gymmeals-master",
+    "storage_bucket": "gymmeals-master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563193929751:android:d8497635f1b906cf637c52",
+        "android_client_info": {
+          "package_name": "com.example.gymmeals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563193929751-hqa0e28h6j6jr6r5snofqo1jp8e76jva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gymmeals",
+            "certificate_hash": "9e84afb4891ffc1d5f452c778569c235b628c669"
+          }
+        },
+        {
+          "client_id": "563193929751-5mbqhrrbkshqsrfc71sscsck0mnmfdnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxWXo_FRUPYJaRJBMuj-pxsyrWWNbW0cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563193929751-5mbqhrrbkshqsrfc71sscsck0mnmfdnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

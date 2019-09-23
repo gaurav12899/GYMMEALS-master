@@ -1,8 +1,8 @@
 package com.example.gymmeals;
 
 public class member {
-    private String name;
-    Long phone;
+    String name;
+    String phone;
 
     public String getName() {
         return name;
@@ -12,11 +12,11 @@ public class member {
         this.name = name;
     }
 
-    public Long getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Long phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

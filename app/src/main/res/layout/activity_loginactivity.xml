@@ -4,28 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".loginactivity">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:elevation="40dp"
+        app:cardCornerRadius="200dp"
+        app:cardElevation="40dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/cadview"
+            app:srcCompat="@drawable/my_logo" />
+    </androidx.cardview.widget.CardView>
+
     <EditText
         android:id="@+id/loginid"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:hint="Email" />
+        android:inputType="textEmailAddress"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_back"
+        android:drawableLeft="@drawable/email"
+        android:hint="Email"
+        android:paddingStart="5dp" />
 
     <EditText
         android:id="@+id/loginpassword"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:hint="Password" />
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_back"
+        android:drawableLeft="@drawable/password"
+        android:hint="Password"
+        android:paddingStart="5dp"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/btnlogin"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Login" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonback"
+        android:text="Login"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/wanttosignup"
@@ -33,6 +63,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="do not have account ? Sign up here." />
+        android:text="do not have account ? Sign up here."
+        android:textColor="@color/white"
+        android:textSize="18dp" />
 
 </LinearLayout>

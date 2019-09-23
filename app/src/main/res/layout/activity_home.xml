@@ -3,48 +3,139 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
 
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
     tools:context=".home">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="WELCOME USER"
-        android:background="#000000"
-        android:textColor="#FFFFFF"
-        android:textSize="50dp"
-        android:layout_marginTop="200dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp">
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textAlignment="textEnd"
+        app:cardBackgroundColor="#D5D8DC"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
-        <Button
-            android:id="@+id/selectmeal"
-            android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/Letusknow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/gradient_background"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Let us know about you..."
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#D5D8DC"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="100dp"
-            android:text="SELECT MEAL"
-            android:textColor="#000000"
-            android:textSize="30dp" />
+            android:background="#00634141"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Height (inch. )"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Weight (kg. )"
+                android:inputType="numberDecimal" />
+
+
+            <Spinner
+                android:id="@+id/sexspin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp" />
+
+            <Spinner
+                android:id="@+id/healthissue"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:dropDownWidth="wrap_content" />
+
+            <EditText
+                android:id="@+id/special"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Comments(Optional)"
+                android:inputType="textShortMessage|textPersonName" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonback"
+                android:gravity="center"
+                android:text="Submit" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/logoutbtn"
-        android:layout_width="208dp"
+        android:id="@+id/skipbtn"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="50dp"
-        android:background="#275208"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/buttonback"
+        android:baselineAligned="false"
         android:hint="BACK"
-        android:text="Logout"
-        android:textColor="#BDA251"
-        android:textSize="50dp"
-        android:textStyle="bold" />
+        android:text="Skip"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="45dp"
+        android:textStyle="normal" />
 
 </LinearLayout>

@@ -22,7 +22,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.lang.reflect.Member;
 
 public class MainActivity extends AppCompatActivity {
-    EditText username,name,password,phone;
+    EditText username,name,password;
+    EditText phone;
     FirebaseAuth mAuth;
     Button signup;
     TextView already;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         username=(EditText)findViewById(R.id.username);
         name=(EditText)findViewById(R.id.name);
-        phone=(EditText)findViewById(R.id.phone) ;
+        phone=(EditText)findViewById(R.id.phone);
         password=(EditText)findViewById(R.id.password);
         signup=(Button) findViewById(R.id.signup);
         already=(TextView) findViewById(R.id.already);
@@ -48,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Long phone_no= Long.parseLong(phone.getText().toString().trim());
-                member.setPhone(phone_no);
-                member.setName(name.getText().toString());
+
+                member.setPhone(phone.getText().toString().trim());
+                member.setName(name.getText().toString().trim());
 
 
                 String email = username.getText().toString();
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (email.isEmpty() && pwd.isEmpty()) {
                     Toast.makeText(MainActivity.this, "Fields Are Empty", Toast.LENGTH_SHORT).show();
                 } else if (!(email.isEmpty() && pwd.isEmpty())) {
+
                     mAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
@@ -73,9 +75,11 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "Signup unsuccessful, Please try again later", Toast.LENGTH_SHORT).show();
 
                             } else {
-                                reff.push().setValue(member);
+
+
                                 Intent i = new Intent(MainActivity.this, home.class);
                                 startActivity(i);
+                                reff.push().setValue(member);
 
                             }
                         }

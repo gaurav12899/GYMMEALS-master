@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Overweighht">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorGreen">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="As, your BMI tells you are over weight and there are some suggestions of food item that you can follow in your diet.."
+                android:textColor="@color/colorRed"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/smoothy" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:text="There are many delicious protein smoothie recipes. Avoid most commercial versions, which may contain added sugar and aren’t as nutritious."
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/milk" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Drinking milk is a great way to add protein to your diet. It contains both casein and whey proteins."
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/rice" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Rice is a great source of carbs that are easy to consume and digest. However, some types of rice are high in arsenic."
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/nuts" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Nuts and nut butters are delicious, high-calorie treats. They’re great for you and easy to add to many different snacks or recipes."
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/meat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Red meat is an excellent source of protein that will help you gain muscle. It contains leucine, an amino acid that helps stimulate muscle protein synthesis. The fattier the meat, the more calories you will take in."
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/potato" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Healthy starches are a great way to get important nutrients and fiber, boost your calorie intake and increase your muscle glycogen stores."
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/fish" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Salmon and other oily fish are a great source of incredibly healthy omega-3 fats. They also provide high-quality protein to help you build muscle."
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bread" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Whole-grain breads can be effective to gain weight, especially when combined with a good protein source."
+
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/avocados" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Avocados are full of healthy fats and nutrients. They're versatile and can be added to many different meals or eaten on their own."
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/cereals" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Eating cereal can be a great way to gain weight and consume more fiber. However, stick to healthier forms such as oatmeal."
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/colorBlue"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/choclate" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:padding="10dp"
+                    android:text="Dark chocolate is packed with antioxidants and other nutrients, along with plenty of calories to help you gain weight.
+."
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/logoutbtn"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Logout" />
+        <Button
+            android:id="@+id/Callus"
+            android:layout_marginTop="10dp"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:drawableLeft="@mipmap/phone"
+            android:text="Call Us" />
+
+    </LinearLayout>
+</ScrollView>

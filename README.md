@@ -1,2 +1,2 @@
 # GYMMEALS-master
-diet recommendation app according to the BMI
+### diet recommendation app according to the BMI
